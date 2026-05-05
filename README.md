@@ -2,7 +2,20 @@
 
 An open-source skill set for AI coding assistants that support the [Agent Skills](https://skills.sh) format. Provides practical, code-first guidance for building business applications with [DevExpress XAF (eXpressApp Framework)](https://docs.devexpress.com/eXpressAppFramework/112670/expressapp-framework) — covering both **v24.2** and **v25.1**, on **Blazor Server**, **WinForms**, and **Web API (OData)** platforms.
 
-18 focused skill files — each concise and token-efficient, with source links for deeper exploration.
+19 focused skill files — each concise and token-efficient, with source links for deeper exploration.
+
+---
+
+## Platforms Supported
+
+| Platform | Directory | Installation |
+|----------|-----------|-------------|
+| **Claude Code** | `.claude-plugin/` | Marketplace or `skills.sh` CLI |
+| **Cursor / Windsurf / Copilot / Cline** | root `xaf-*` folders | `skills.sh` CLI or manual copy |
+| **Hermes Agent** | `hermes/` | `hermes/install-hermes-skills.sh` |
+| **OpenCode** | `opencode/` | `opencode/install-opencode-skills.sh` |
+
+For Hermes and OpenCode installation, see [`README-HERMES.md`](README-HERMES.md).
 
 ---
 
@@ -170,6 +183,22 @@ Agents supporting auto-discovery will load the relevant skill automatically base
 | `xaf-conditional-appearance` | [Appearance] attribute, criteria expressions, dynamic appearance from code |
 | `xaf-deployment` | IIS/Azure/Docker, ClickOnce/MSI, DevExpress license, Serilog, health checks |
 | `xaf-memory-leaks` | Memory leak prevention: event handler symmetry, ObjectSpace scoped disposal, batch processing, IDisposable patterns, diagnostic tools |
+
+---
+
+## Installation for Hermes Agent & OpenCode
+
+See [`README-HERMES.md`](README-HERMES.md) for detailed installation instructions for Hermes Agent and OpenCode.
+
+Quick install for Hermes:
+```bash
+bash <(curl -fsSL https://raw.githubusercontent.com/egarim/xaf-skills/main/hermes/install-hermes-skills.sh)
+```
+
+Quick install for OpenCode:
+```bash
+bash <(curl -fsSL https://raw.githubusercontent.com/egarim/xaf-skills/main/opencode/install-opencode-skills.sh)
+```
 
 ---
 
